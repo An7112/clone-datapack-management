@@ -1,0 +1,45 @@
+{
+  "name": "web.datapack-management",
+  "version": "1.1.18",
+  "private": "true",
+  "homepage": ".",
+  "main": "index.js",
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "sh -ac '. ./${REACT_APP_ENV}; webpack-start'",
+    "build": "sh -ac '. ./${REACT_APP_ENV}; webpack-build'",
+    "ts-version": "tsc -v",
+    "test": "webpack-test",
+    "update": "jest --update-snapshot",
+    "lint": "eslint --ext js,ts,tsx src --fix",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "preversion": "make snapshot-library && git add -A library-information.json"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "react-js-cron": "^1.4.0",
+    "webpack-config": "git+ssh://git@gitlab.com:gotecq/react-lib/webpack-config.git#v1.7.23"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@types/leaflet": "^1.7.10",
+    "@types/lodash.startcase": "^4.4.6",
+    "@types/react-router-dom": "^5.3.2",
+    "babel-plugin-import": "^1.13.3"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9",
+    "@react-leaflet/core": "1.0.2",
+    "leaflet": "1.7.1",
+    "leaflet.markercluster": "1.4.1",
+    "@types/react": "17.0.43",
+    "immutable": "4.1.0"
+  }
+}

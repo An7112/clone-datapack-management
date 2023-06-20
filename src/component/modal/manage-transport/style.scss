@@ -1,0 +1,70 @@
+.btn-manage-transport {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--main-antd);
+
+    &:hover {
+        color: var(--sub-antd);
+    }
+}
+
+.manage-transport-modal {
+    height: 800px;
+
+    .ant-modal-content {
+        height: 100%;
+
+        .ant-modal-body {
+            height: calc(100% - 52px);
+        }
+    }
+
+    .manage-transport-table {
+        .paginated-header {
+            padding-left: var(--spacing);
+            padding-right: var(--spacing);
+
+            .ant-input-search {
+                width: 250px;
+            }
+        }
+
+        .cell-transport-name .entity-user-compact .compact-content span {
+            font-size: var(--fs-sm);
+        }
+
+        .paginated-row:hover {
+            background-image: var(--gradient-hovered);
+        }
+    }
+
+    .base-form.transport-form .list-field-wrap {
+        .list-item-label {
+            font-weight: normal;
+            text-transform: capitalize;
+
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 14px;
+        }
+
+        .ant-row.ant-form-item {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .compose-header {
+        padding-left: var(--spacing);
+        padding-right: var(--spacing);
+    }
+
+    .list-accessed-users {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--spacing-sm);
+    }
+    .actionbtn-disabled.transport-edit-button {
+        color: rgba(0, 0, 0, 0.25);
+    }
+}

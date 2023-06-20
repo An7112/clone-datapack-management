@@ -1,0 +1,65 @@
+.datapack-navbar {
+    .icon-manage {
+        cursor: pointer;
+        font-size: var(--fs-4xl);
+        color: var(--color-faint);
+
+        &:hover {
+            background-color: var(--sub-secondaryLighter);
+        }
+
+        &.ant-dropdown-open {
+            background-color: var(--main-secondary);
+            color: var(--color-normal);
+        }
+    }
+}
+
+.global-manage-menu {
+    border-radius: 5px;
+    box-shadow: var(--bs-1);
+
+    .ant-dropdown-menu-title-content {
+        color: var(--color-normal);
+        font-size: var(--fs-md);
+        display: flex;
+        align-items: center;
+        column-gap: var(--spacing-sm);
+
+        .anticon {
+            color: var(--color-faint);
+            font-size: var(--fs-xl);
+        }
+    }
+}
+
+.utility-widget-container {
+    display: inline-flex;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+    cursor: pointer;
+    color: var(--color-normal);
+    min-width: var(--navbar-height);
+    min-height: var(--navbar-height);
+    align-items: center;
+
+    .widget-container-button {
+        display: inline-flex;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin: auto;
+        border-radius: var(--br-max);
+        align-items: center;
+        background-color: var(--main-tertiaryLighter);
+        border: var(--bd-blunt);
+
+        > .anticon {
+            font-size: 20px;
+            margin: auto;
+            pointer-events: none;
+        }
+    }
+}

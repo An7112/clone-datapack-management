@@ -1,0 +1,25 @@
+.datapack-board-panel {
+    background-color: var(--white);
+}
+
+.compose-panel.full-height .compose-panel-body {
+    position: relative;
+}
+
+.datapack-public-layout {
+    .primary {
+        flex: 1;
+        overflow: auto;
+        margin: 0;
+        background-color: transparent;
+    }
+}
+
+.datapack-manager-layout {
+    .primary {
+        flex: 4;
+    }
+    .secondary {
+        flex: 6;
+    }
+}

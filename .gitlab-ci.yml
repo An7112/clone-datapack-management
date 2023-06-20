@@ -1,0 +1,74 @@
+image: node:12.13.0-alpine
+
+variables:
+    PRODUCTION_BUCKET: not_available
+    BUILD_DIR: build
+  # develop | production | certify
+    TARGET_ENV: develop
+
+cache:
+    paths:
+        - node_modules/
+
+stages:
+    - lint
+    - test
+    - deploy
+
+before_script:
+    - apk add git openssh
+
+    # Setup SSH deploy keys
+    - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+    # Install deps
+    - yarn
+
+
+lint:
+   stage: lint
+   script:
+       - yarn run lint
+
+test:
+   stage: test
+   script:
+       - yarn run test
+
+deploy-staging:
+    stage: deploy
+    variables:
+        TARGET_ENV: develop
+    only:
+        - /^v(.+)$/
+    script:
+        - apk add py-pip
+        - pip install awscli
+        - CI=false REACT_APP_ENV=./.env.develop yarn run build
+        - echo "Deploy to s3://$PRODUCTION_BUCKET/$TARGET_ENV/"
+        - aws configure --profile ssc_deploy set aws_access_key_id $AWS_ACCESS_KEY_ID
+        - aws configure --profile ssc_deploy set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+        - aws configure --profile ssc_deploy set region us-west-2
+        - aws configure --profile ssc_deploy set output json
+        - aws --profile ssc_deploy s3 sync $BUILD_DIR/ s3://$PRODUCTION_BUCKET/$TARGET_ENV/
+
+deploy-production:
+    stage: deploy
+    variables:
+        TARGET_ENV: production
+    only:
+        - /^v(.+)-stable$/
+    script:
+        - apk add py-pip
+        - pip install awscli
+        - CI=false REACT_APP_ENV=./.env.production yarn run build
+        - echo "Deploy to s3://$PRODUCTION_BUCKET/$TARGET_ENV/"
+        - aws configure --profile ssc_deploy set aws_access_key_id $AWS_ACCESS_KEY_ID
+        - aws configure --profile ssc_deploy set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+        - aws configure --profile ssc_deploy set region us-west-2
+        - aws configure --profile ssc_deploy set output json
+        - aws --profile ssc_deploy s3 sync $BUILD_DIR/ s3://$PRODUCTION_BUCKET/$TARGET_ENV/

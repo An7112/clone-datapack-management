@@ -1,0 +1,68 @@
+.dropdown-icon {
+    font-size: var(--fs-xl);
+}
+
+.resource-uploader {
+    .upload-btn {
+        background-color: var(--main-success);
+        border: none;
+        color: white;
+
+        &:hover {
+            background-color: var(--sub-success);
+        }
+    }
+}
+
+.datapack-general-information.grid-layout {
+    .information.information-align-left .information-label {
+        flex: unset;
+    }
+    .information-label.truncate {
+        display: block;
+        width: 100%;
+        max-width: 120px;
+    }
+    .information-value.truncate {
+        overflow: unset;
+        white-space: normal;
+        text-overflow: unset;
+    }
+
+    .listing-shell.info-grid .info-grid-value {
+        font-size: var(--fs);
+    }
+}
+
+.datapack-general-information.general-custom-layout {
+    margin-top: var(--spacing-md);
+    .column-access-user {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+.scheduling-popover-container {
+    min-width: 270px;
+    .scheduling-item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+        padding: var(--spacing-xs);
+        border-radius: var(--br-sm);
+        .information-label b {
+            font-weight: normal;
+        }
+
+        &:hover {
+            background-color: var(--sub-hovered);
+        }
+    }
+
+    .btn-view-all {
+        justify-content: center;
+        color: var(--main-secondaryDarker);
+        font-weight: bold;
+    }
+}

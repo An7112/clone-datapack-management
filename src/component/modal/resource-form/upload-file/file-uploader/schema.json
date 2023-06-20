@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "required": [
+        "display"
+    ],
+    "properties": {
+        "display": {
+            "type": "string",
+            "placeholder": "Text To Display"
+        },
+        "description": {
+            "type": "string",
+            "placeholder": "Note"
+        }
+    }
+}

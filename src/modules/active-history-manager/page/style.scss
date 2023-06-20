@@ -1,0 +1,21 @@
+.browsing-layout.balanced-browsing-layout.active-history-layout {
+    .primary.layout-panel {
+        flex: 1;
+        max-width: 960px;
+        width: 100%;
+    }
+
+    .timeline-container {
+        border: none;
+        .timeline-filter {
+            display: none;
+        }
+        .timeline-board {
+            border-radius: var(--br);
+        }
+    }
+
+    .activity-global-panel {
+        height: 100%;
+    }
+}

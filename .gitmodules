@@ -1,0 +1,4 @@
+
+[submodule ".makelib"]
+	path = .makelib
+	url = git@gitlab.com:gotecq-frontend/make-lib.git

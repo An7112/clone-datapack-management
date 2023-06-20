@@ -1,0 +1,67 @@
+.access-user-modal {
+    .access-user-form {
+        .select-role-access-user {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            .ant-row.ant-form-item.select-user {
+                margin-top: 0;
+                flex: 1;
+            }
+            .ant-row.ant-form-item.select-role {
+                align-self: flex-start;
+                margin-top: 0;
+                width: 80px;
+            }
+        }
+        .general-access {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-sm);
+            .select-general-access-container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .ant-dropdown-trigger {
+                width: fit-content;
+            }
+            .sub-general-access {
+                padding: 0 8px;
+            }
+        }
+    }
+
+    .icon-public {
+        path {
+            fill: var(--main-success);
+        }
+    }
+    .header-title {
+        color: #858585;
+        margin-top: var(--spacing-md);
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+}
+
+.access-user-view-container {
+    .access-user-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-sm);
+        // padding: var(--spacing-sm) 0;
+        .access-user-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        .access-user-role {
+            padding-right: 8px;
+        }
+    }
+}

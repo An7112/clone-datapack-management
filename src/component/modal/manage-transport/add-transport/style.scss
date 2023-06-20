@@ -1,0 +1,144 @@
+.add-transport-modal {
+    .transport-form {
+        .default-params-title {
+            margin-top: var(--spacing);
+            display: flex;
+            justify-content: space-between;
+            overflow: visible;
+            height: 20px;
+
+            .default-params-label {
+                padding-bottom: var(--spacing-xs);
+            }
+
+            .anticon-info-circle {
+                color: var(--main-primary);
+            }
+        }
+        .table-parameter {
+            border: var(--bd);
+        }
+        .header-key-value {
+            display: flex;
+            flex-direction: row;
+            padding: var(--spacing-xs);
+            border-bottom: var(--bd);
+            background-color: var(--main-tertiaryLighter);
+
+            .key {
+                width: 200px;
+                padding: var(--spacing-xs) var(--spacing-sm);
+            }
+
+            .value {
+                padding: var(--spacing-xs) var(--spacing-sm);
+            }
+        }
+        .parameters:not(.others) {
+            .list-item-wrap {
+                .list-item-title {
+                    display: none;
+                }
+            }
+            .list-item-label {
+                display: none;
+            }
+        }
+
+        .parameters.others {
+            display: flex;
+            flex-direction: column-reverse;
+            .list-item-wrap {
+                flex-direction: row-reverse;
+            }
+            .ant-input-suffix {
+                display: none;
+            }
+            .list-item-title {
+                margin-right: var(--spacing-xs);
+                .button-delete {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+            .list-item-label {
+                border-bottom: none;
+                align-self: flex-start;
+                padding: var(--spacing-xs) var(--spacing-xs);
+                height: 43px;
+            }
+        }
+
+        .ant-input-affix-wrapper-disabled {
+            background-color: white;
+
+            * {
+                color: var(--color);
+            }
+        }
+
+        .nest-field {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 0;
+
+            .ant-row.ant-form-item {
+                margin: 0;
+
+                &:not(:first-child) {
+                    flex: 1;
+                }
+
+                &:first-child {
+                    width: 200px;
+                }
+            }
+
+            * {
+                border: none;
+            }
+        }
+        .list-item-wrap {
+            padding: 5px;
+            margin: 0;
+            border-bottom: var(--bd);
+            border-radius: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+
+            .list-item-title {
+                width: unset;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                margin-right: var(--spacing-sm);
+
+                .list-item-title-number {
+                    display: none;
+                }
+            }
+        }
+        .parameters .ant-col.ant-form-item-label {
+            display: none;
+        }
+
+        .ant-row.ant-form-item:first-child {
+            border-right: var(--bd);
+        }
+    }
+
+    .field-description {
+        color: var(--color-faint);
+
+        .anticon {
+            color: var(--main-warning);
+            margin-right: var(--spacing-xs);
+        }
+    }
+}
+
+.error-mes {
+    color: var(--main-danger);
+}

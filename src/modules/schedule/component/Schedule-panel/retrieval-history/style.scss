@@ -1,0 +1,25 @@
+.compose-section-header.title-datapack-retrieval-history {
+    border-bottom: none;
+    // padding-top: var(--spacing-sm);
+}
+
+.paginated.paginated-table.retrieval-history-list {
+    outline: none;
+    .retrieval-history-item {
+        .retrieval-history-cell {
+            padding: var(--spacing-sm);
+        }
+        .icon-retry {
+            color: var(--main-major);
+
+            .action-btn-content {
+                display: flex;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .paginated-footer {
+        border-radius: 0 0 var(--spacing-xs) var(--spacing-xs);
+    }
+}

@@ -1,0 +1,40 @@
+.replace-file-modal {
+    .ant-modal-body {
+        position: relative;
+
+        .description {
+            font-size: var(--fs-xl);
+            font-weight: bold;
+            color: #787885;
+
+            .file-display {
+                color: var(--color-extreme);
+            }
+        }
+
+        .btn-upload.ant-btn {
+            background-color: var(--main-success);
+            border-color: var(--main-success);
+            color: white;
+            border-radius: 0;
+            font-weight: bold;
+
+            .anticon {
+                font-size: var(--fs-lg);
+            }
+        }
+
+        .ant-upload.ant-upload-drag p.ant-upload-hint {
+            font-size: var(--fs-xl);
+            color: var(--bdColor-blunt);
+        }
+
+        .ant-upload-list-text-container {
+            .attachment-shell {
+                border: 1px solid var(--main-tertiaryLighter);
+            }
+
+            margin-top: var(--spacing-sm);
+        }
+    }
+}

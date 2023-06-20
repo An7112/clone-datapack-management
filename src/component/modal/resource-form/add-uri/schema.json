@@ -1,0 +1,30 @@
+{
+    "title": "Add URI",
+    "type": "object",
+    "properties": {
+        "content": {
+            "type": "string",
+            "title": "URI",
+            "placeholder": "URI"
+        },
+        "description": {
+            "type": "string",
+            "title": "Note",
+            "placeholder": "Note"
+        },
+        "display": {
+            "type": "string",
+            "title": "Text To Display",
+            "placeholder": "Text To Display"
+        },
+        "kind": {
+            "type": "string",
+            "title": "Type"
+        }
+
+    },
+    "required": [
+        "content",
+        "display"
+    ]
+}

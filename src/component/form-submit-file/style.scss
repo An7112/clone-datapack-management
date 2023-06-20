@@ -1,0 +1,109 @@
+.upload-file-form {
+    padding: var(--spacing);
+
+    i {
+        font-size: var(--fs-lg);
+    }
+
+    .input-file {
+        cursor: pointer;
+    }
+
+    .ant-upload-drag {
+        margin-top: var(--spacing-xs);
+    }
+
+    .ant-upload.ant-upload-drag p.ant-upload-hint {
+        font-size: var(--fs-xl);
+        color: var(--bdColor-blunt);
+    }
+
+    .btn-upload {
+        background-color: var(--main-success);
+        color: white;
+        border-color: unset;
+        font-weight: bold;
+        font-size: var(--fs-md);
+        border-radius: 0;
+        padding: var(--spacing-xs) var(--spacing-sm);
+
+        .anticon-file-add {
+            font-size: var(--fs-lg);
+        }
+    }
+
+    .btn-submit {
+        margin-top: var(--spacing);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .ant-upload-list:not(:empty) {
+        border: var(--bd);
+        margin-top: var(--spacing-sm);
+        max-height: 300px;
+        overflow: auto;
+
+        .ant-upload-list-text-container:last-child {
+            .attachment-shell {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.upload-file-form-result {
+    padding: var(--spacing);
+
+    h3 {
+        font-size: var(--fs-lg);
+        font-weight: bold;
+    }
+
+    .list-uploaded-files:not(:empty) {
+        margin-top: var(--spacing-md);
+        position: relative;
+        border: var(--bd);
+        max-height: 300px;
+        overflow: auto;
+
+        .attachment-shell:last-child {
+            border-bottom: none;
+        }
+
+        .attachment-shell .actionmenu {
+            height: 100%;
+            border-radius: 0;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.12);
+            margin-bottom: 0;
+        }
+    }
+
+    .btn-upload-more {
+        margin-top: var(--spacing);
+        display: flex;
+        justify-content: center;
+
+        .ant-btn-primary {
+            font-weight: bold;
+            font-size: var(--fs-md);
+            border-radius: 0;
+            padding: var(--spacing-xs) var(--spacing-sm);
+
+            &:not(:disabled) {
+                background-color: var(--main-success);
+                border-color: unset;
+                color: white;
+            }
+        }
+    }
+}
+
+.submit-info-form {
+    border-top: var(--bd);
+
+    .ant-input-affix-wrapper-disabled.ant-input-affix-wrapper-focused {
+        border-color: #d9d9d9;
+        box-shadow: none;
+    }
+}

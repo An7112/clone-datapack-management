@@ -1,0 +1,24 @@
+{
+    "title": "Edit File Information",
+    "type": "object",
+    "properties": {
+        "display": {
+            "type": "string",
+            "title": "File Name",
+            "placeholder": "Text To Display",
+            "className": "no-spacing-top"
+        },
+        "path": {
+            "type": "string",
+            "disabled": true
+        },
+        "description": {
+            "type": "string",
+            "title": "Description",
+            "placeholder": "Description"
+        }
+    },
+    "required": [
+        "display"
+    ]
+}

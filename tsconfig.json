@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@gotecq/*": ["__lib__/*"],
+      "@/lib-root/*": ["__lib__/*"],
+      "@/gotecq-lib/*": ["__lib__/*"],
+      "@/*": ["*"],
+    },
+    "preserveSymlinks": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es2015"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "typeRoots": [
+      "../../node_modules/@types",
+      "./node_modules/@types",
+      "./src/types"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}

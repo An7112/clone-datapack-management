@@ -1,0 +1,30 @@
+.schedule-board {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    border-radius: var(--br);
+    border: var(--bd);
+
+    .header-template-detail .content-icon span {
+        display: flex;
+        align-items: center;
+    }
+
+    .compose-panel {
+        height: 100%;
+
+        .compose-panel-body {
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+}
+.content-icon {
+    display: flex;
+    span {
+        display: inherit;
+        .icon-gird {
+            fill: none;
+        }
+    }
+}

@@ -1,0 +1,178 @@
+.s8-btn-custom {
+    &.ant-btn-primary {
+        background: #40a9ff;
+        border: none;
+
+        &:hover {
+            background: #40a9ffad;
+        }
+    }
+}
+
+.send-data-modal {
+    #base-form-wrap .base-form .ant-form-item-has-warning .ant-form-item-control-input-content .ant-input-affix-wrapper,
+    .base-form .ant-form-item-has-warning .ant-form-item-control-input-content .ant-input-number,
+    .base-form .ant-form-item-has-warning .ant-form-item-control-input-content .ant-picker {
+        border-color: #d9d9d9;
+    }
+
+    #base-form-wrap .resource-list--dropdown .ant-select-selector,
+    #base-form-wrap .paginator-size-changer .ant-select-selector {
+        border-color: #d9d9d9 !important;
+    }
+
+    .ant-form-item-has-feedback > .ant-select .ant-select-arrow,
+    .ant-form-item-has-feedback > .ant-select .ant-select-clear,
+    .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow,
+    .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-clear {
+        right: 11px;
+    }
+    .resource-list-field-custom {
+        margin-top: 0;
+
+        .ant-form-item-children-icon {
+            display: none;
+        }
+    }
+    .btn-add-transport span {
+        text-decoration: underline;
+    }
+
+    .resource-table {
+        .paginated-table__batch-tool,
+        .paginated-table__paginator {
+            padding: var(--spacing-xs) var(--spacing-sm);
+
+            .clear-btn {
+                border-radius: 3px;
+            }
+        }
+
+        .cell__prefix {
+            display: flex;
+
+            .tool-wrap {
+                align-self: center;
+            }
+        }
+
+        .content__header__row,
+        .content__row {
+            grid-template-columns: 30px 1.8fr 1fr 1fr 1fr;
+        }
+
+        .content__cell {
+            display: flex;
+            align-items: center;
+            color: var(--color-normal);
+
+            .anticon {
+                margin-right: var(--spacing-xs);
+                width: 15px;
+                font-size: var(--fs-md);
+                color: var(--color-faint);
+            }
+
+            .anticon-link {
+                transform: rotate(45deg);
+            }
+        }
+
+        .paginated-header {
+            padding: 0;
+            margin: 0;
+            margin-bottom: var(--spacing-xs);
+            min-height: 32px;
+        }
+
+        .select-data {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            // flex-wrap: wrap;
+
+            .title-suffix {
+                display: flex;
+                column-gap: var(--spacing);
+                position: relative;
+                left: 1px;
+            }
+        }
+
+        .resource-list--dropdown {
+            width: 80px;
+
+            .ant-select-selection-item,
+            .ant-select-arrow {
+                color: var(--color-subtle);
+                font-weight: bold;
+            }
+
+            .ant-select-selection-placeholder {
+                color: var(--color-subtle);
+                font-weight: bold;
+            }
+
+            .ant-select-arrow {
+                top: 48%;
+
+                .anticon {
+                    font-size: var(--fs);
+                }
+            }
+        }
+
+        .ant-input-search {
+            width: 175px;
+        }
+    }
+
+    .error-mes {
+        color: var(--main-danger);
+    }
+
+    .select-transport-title {
+        margin-top: var(--spacing);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+        height: 15px;
+        margin-bottom: var(--spacing-xs);
+
+        .s8-button.ant-btn {
+            padding: 0;
+            line-height: 1;
+        }
+    }
+
+    .select-transport {
+        margin-top: 0;
+
+        .ant-form-item-label {
+            display: none;
+        }
+    }
+
+    .nest-field {
+        .ant-form-item {
+            margin-top: 0;
+
+            .ant-form-item-label {
+                display: none;
+            }
+        }
+    }
+
+    .refresh-location-btn:hover {
+        box-shadow: none;
+    }
+
+    .spin-icon .anticon {
+        animation: spin 5s linear infinite;
+    }
+
+    .select-location {
+        justify-content: flex-start;
+    }
+}

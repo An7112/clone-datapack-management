@@ -1,0 +1,92 @@
+// .submit-file-request {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     align-items: center;
+//     margin-top: 60px;
+//     margin-bottom: var(--spacing);
+//     height: fit-content;
+
+//     .separate-panel {
+//         width: 95%;
+//         max-width: 700px;
+//         background-color: white;
+//         margin-bottom: var(--spacing);
+//         border-radius: var(--br);
+//         box-shadow: var(--bs-2);
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .file-request-info,
+//     .expired-message {
+//         padding: var(--spacing);
+//         border-top: 10px solid var(--main-secondaryDarker);
+//         position: relative;
+
+//         .message {
+//             font-size: var(--fs-lg);
+//             color: var(--color-faint);
+//         }
+
+//         .title {
+//             font-size: 32px;
+//             font-weight: bold;
+//             color: var(--color-normal);
+//             margin-top: var(--spacing-xs);
+//         }
+
+//         .description {
+//             color: var(--color-subtle);
+//             font-size: var(--fs-lg);
+//         }
+
+//         .deadline_date span {
+//             color: var(--main-danger);
+//             font-weight: bold;
+//         }
+
+//         .loading-fullsize {
+//             border-radius: var(--br);
+//         }
+//     }
+
+//     .expired-message {
+//         text-align: center;
+
+//         .expired-title {
+//             font-size: 48px;
+//             font-weight: bold;
+//         }
+
+//         .expired-description {
+//             font-style: italic;
+//             font-size: var(--fs-2xl);
+//         }
+//     }
+
+//     .submit-info-form {
+//         .description {
+//             color: var(--color-normal);
+//             font-size: var(--fs-lg);
+//             margin-bottom: var(--spacing-sm);
+//         }
+
+//         .ant-btn-primary {
+//             margin-top: var(--spacing);
+//         }
+
+//         .btn-submit {
+//             display: flex;
+//             justify-content: flex-end;
+//         }
+
+//         .ant-form-item-label .label-wrap span {
+//             font-size: var(--fs-lg);
+//         }
+//     }
+
+//     .submit-form {
+//         height: fit-content;
+//     }
+// }

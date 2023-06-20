@@ -1,0 +1,22 @@
+.ant-modal-content .base-form.update-document-info-form {
+    display: flex;
+    column-gap: var(--spacing-sm);
+    padding: 0;
+    width: 100%;
+
+    .ant-form-item {
+        width: 110px;
+        font-size: var(--fs-sm);
+        margin-top: 0;
+        flex: 1;
+
+        .ant-input {
+            font-size: var(--fs-sm);
+            line-height: 22px;
+        }
+
+        .ant-form-item-label {
+            display: none;
+        }
+    }
+}

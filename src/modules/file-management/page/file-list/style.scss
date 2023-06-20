@@ -1,0 +1,76 @@
+.file-table-list.paginated-table {
+    width: 540px;
+    .paginated-row.paginated-table-row.file-item {
+        width: 100%;
+        padding: var(--spacing-xs) var(--spacing);
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        .content-type-icon {
+            font-size: var(--fs-2xl);
+        }
+        .file-information {
+            width: 100%;
+            .file-name {
+                width: 100%;
+                font-weight: 400;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0.5rem;
+                    .display-content {
+                        width: fit-content;
+                        max-width: 48%;
+                    }
+                }
+
+                .display-content {
+                    max-width: 70%;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .format-file-size {
+                    max-width: 80px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: flex;
+                    white-space: nowrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    font-size: var(--fs-xs);
+                    color: var(--color-faint);
+                }
+            }
+            .bottom-information {
+                margin-top: 5px;
+                color: var(--contrast-disabled);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: var(--fs-sm);
+                gap: 0.5rem;
+                .content-item-row {
+                    max-width: 48%;
+                    display: inline-block;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+
+    .sent-time {
+        display: flex;
+        gap: 0.2rem;
+        .time {
+            font-weight: 700;
+        }
+    }
+}

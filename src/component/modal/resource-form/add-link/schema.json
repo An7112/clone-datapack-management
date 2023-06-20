@@ -1,0 +1,30 @@
+{
+    "title": "Add Link",
+    "type": "object",
+    "properties": {
+        "content": {
+            "type": "string",
+            "title": "Link",
+            "placeholder": "Link"
+        },
+        "description": {
+            "type": "string",
+            "title": "Note",
+            "placeholder": "Note"
+        },
+        "display": {
+            "type": "string",
+            "title": "Text To Display",
+            "placeholder": "Text To Display"
+        },
+        "kind": {
+            "type": "string",
+            "title": "Type"
+        }
+
+    },
+    "required": [
+        "content",
+        "display"
+    ]
+}

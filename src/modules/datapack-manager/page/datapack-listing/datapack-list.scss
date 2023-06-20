@@ -1,0 +1,40 @@
+.datapack-list {
+    overflow: hidden;
+    border-radius: var(--br);
+
+    .ant-btn + .ant-btn {
+        margin-left: var(--spacing-xs);
+    }
+
+    .tag-box {
+        flex-basis: 100%;
+    }
+}
+
+.datapack-item {
+    grid-template-columns: 36px 5fr;
+    align-content: center;
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
+    // font-size: var(--fs-sm);
+
+    // .table-cell:first-child {
+    //     display: flex;
+    // }
+
+    .label-status {
+        width: fit-content;
+    }
+
+    .author,
+    .datapack-name {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+    }
+    .datapack-name {
+        span {
+            color: var(--sub-antd);
+        }
+    }
+}

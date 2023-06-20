@@ -1,0 +1,21 @@
+#root .app-wrapper .app-content .browsing-layout.balanced-browsing-layout.file-preview-layout {
+    > .primary.layout-panel {
+        margin: 0;
+        min-width: unset;
+        max-width: unset;
+        width: 540px;
+        min-width: 540px;
+        max-width: 540px;
+        padding: 0;
+    }
+
+    .secondary.layout-panel {
+        flex: 1;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        border: solid 1px var(--main-tertiary);
+        padding: 0;
+    }
+}

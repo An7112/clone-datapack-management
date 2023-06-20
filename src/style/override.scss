@@ -1,0 +1,38 @@
+#root {
+    .app-wrapper {
+        .browsing-layout {
+            & > .primary {
+                --width: 650px;
+                min-width: var(--width);
+                min-width: var(--width);
+            }
+        }
+    }
+}
+
+.non-data-reset {
+    display: block;
+}
+
+.ant-modal-root .base-form .footer {
+    padding: var(--spacing-sm) var(--spacing);
+}
+
+form.base-form .content {
+    font-family: inherit;
+}
+
+.ant-select.ant-select-multiple {
+    .ant-select-selection-search-mirror,
+    input.ant-select-selection-search-input {
+        font-family: inherit;
+    }
+}
+
+.truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

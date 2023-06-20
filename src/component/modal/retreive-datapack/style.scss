@@ -1,0 +1,40 @@
+.retrieve-data-modal {
+    .select-datapack-title {
+        margin-top: var(--spacing);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+        height: 15px;
+        margin-bottom: var(--spacing-xs);
+
+        .s8-button.ant-btn {
+            padding: 0;
+            line-height: 1;
+        }
+    }
+
+    .select-location {
+        justify-content: flex-start;
+    }
+
+    .select-datapack {
+        margin-top: 0;
+
+        .ant-form-item-label {
+            display: none;
+        }
+    }
+
+    .btn-add-datapack span {
+        text-decoration: underline;
+    }
+
+    .refresh-location-btn:hover {
+        box-shadow: none;
+    }
+
+    .spin-icon .anticon {
+        animation: spin 5s linear infinite;
+    }
+}

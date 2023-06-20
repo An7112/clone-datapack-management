@@ -1,0 +1,19 @@
+.schedule-list {
+    border-radius: var(--br);
+    .schedule-item {
+        padding-top: var(--spacing-xs);
+        padding-bottom: var(--spacing-xs);
+        // .table-cell:first-child {
+        //     display: flex;
+        // }
+        .label-status {
+            width: fit-content;
+        }
+        .author,
+        .scheduling-name {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+    }
+}

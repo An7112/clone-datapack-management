@@ -1,0 +1,9 @@
+.edit-schedule-form {
+    // overwrite css thư viện cho field frequency
+    .ant-form-item-has-feedback > .ant-select .ant-select-arrow,
+    .ant-form-item-has-feedback > .ant-select .ant-select-clear,
+    .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow,
+    .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-clear {
+        right: 11px;
+    }
+}

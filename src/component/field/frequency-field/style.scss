@@ -1,0 +1,38 @@
+.frequency {
+    display: flex;
+    align-items: flex-start;
+    .custom-period-container {
+        height: 42px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-bottom: var(--spacing-sm);
+    }
+    .label-every {
+        margin-right: var(--spacing-xs);
+    }
+
+    .icon-close {
+        margin-bottom: var(--spacing-sm);
+        align-self: center;
+        margin-left: var(--spacing-sm);
+    }
+}
+.frequency-wrap-field {
+    .ant-form-item-children-icon {
+        display: none;
+    }
+}
+
+.frequency-select-container {
+    display: flex;
+    align-items: center;
+    .prefix {
+        display: block;
+        margin-left: var(--spacing-xs);
+    }
+    .frequency-select {
+        margin-left: var(--spacing-xs);
+        width: auto !important;
+    }
+}

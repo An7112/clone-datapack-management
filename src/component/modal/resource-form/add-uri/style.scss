@@ -1,0 +1,80 @@
+.add-uri-form.base-form {
+    border: var(--bd);
+    margin-bottom: var(--spacing-sm);
+    border-radius: 2px;
+    background-color: var(--main-tertiaryLighter);
+    padding: var(--spacing-sm);
+    padding-top: 0;
+    position: relative;
+
+    .btn-remove {
+        position: absolute;
+        padding: var(--spacing-xxs);
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        color: var(--main-danger);
+        border: var(--bd);
+        cursor: pointer;
+        background-color: white;
+
+        svg {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .content {
+        background: transparent;
+    }
+}
+
+.ant-modal-wrap.s8-modal {
+    .add-multiple-uri-modal {
+        .btn-add-more-button {
+            width: 100%;
+            border-radius: 2px;
+            border-color: var(--main-major);
+            color: var(--sub-major);
+        }
+
+        .ant-modal-content {
+            position: relative;
+        }
+
+        .submit-success,
+        .submit-error {
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+
+            & > .anticon {
+                font-size: var(--fs-lg);
+                margin-right: var(--spacing-sm);
+            }
+        }
+
+        .submit-success {
+            color: var(--main-success);
+        }
+
+        .submit-error {
+            color: var(--main-danger);
+            font-size: var(--fs);
+
+            .reload {
+                margin-left: var(--spacing);
+                color: var(--sub-major);
+                cursor: pointer;
+
+                .anticon {
+                    margin-right: var(--spacing-xs);
+                }
+
+                &:hover {
+                    color: var(--sub-major);
+                    font-size: var(--fs-md);
+                }
+            }
+        }
+    }
+}

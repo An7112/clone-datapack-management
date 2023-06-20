@@ -1,0 +1,107 @@
+.resource-uploader {
+    .ant-upload.ant-upload-drag {
+        border-radius: var(--br);
+    }
+}
+
+.upload-resource-panel {
+    height: 100%;
+    border: var(--bd);
+    border-radius: var(--br);
+
+    .btn-back {
+        .anticon {
+            color: var(--main-major);
+        }
+    }
+
+    .compose-header {
+        .header-title {
+            text-transform: none;
+            text-shadow: none;
+        }
+
+        // background-color: var(--main-tertiary);
+    }
+
+    .compose-panel-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // border: var(--bd);
+        border-radius: 0 0 var(--br) var(--br);
+
+        .btn-add-resource {
+            align-self: flex-end;
+            margin-bottom: var(--spacing-sm);
+        }
+    }
+
+    .ant-upload-drag {
+        height: 210px;
+
+        p.ant-upload-hint {
+            color: var(--bdColor-blunt);
+            font-size: var(--fs-xl);
+        }
+
+        .s8-button {
+            font-weight: bold;
+            background-color: var(--main-success);
+            border-color: var(--main-success);
+            color: white;
+
+            .anticon {
+                font-size: var(--fs-lg);
+            }
+        }
+    }
+
+    .list-uploaded-files {
+        margin-top: var(--spacing);
+        border: 1px solid var(--main-tertiaryLighter);
+
+        &:empty {
+            display: none;
+        }
+
+        .attachment-shell {
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.add-resource-overlay {
+    width: 180px;
+
+    .ant-dropdown-menu {
+        border-radius: 5px;
+        padding: 0;
+        border: var(--bd);
+
+        .ant-dropdown-menu-item {
+            height: 40px;
+        }
+    }
+
+    .ant-dropdown-menu-title-content {
+        color: var(--color-normal);
+        font-size: var(--fs);
+    }
+
+    .anticon {
+        font-size: var(--fs-lg);
+        width: 16px;
+        color: var(--color-faint);
+    }
+
+    .anticon-link {
+        transform: rotate(45deg);
+    }
+
+    .icon-uri {
+        font-size: var(--fs-md);
+    }
+}

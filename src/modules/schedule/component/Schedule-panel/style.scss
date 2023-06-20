@@ -1,0 +1,52 @@
+.schedule-panel {
+    .title-datapack-retrieval-information {
+        padding-top: var(--spacing-md);
+    }
+    .title-scheduling-information {
+        .actionbtn-edit {
+            margin: 0;
+        }
+    }
+    .schedule-general-information {
+        .listing-shell.info-grid .info-grid-value {
+            font-size: var(--fs);
+        }
+        .datapack-name {
+            cursor: pointer;
+            color: var(--main-major);
+        }
+        .datapack-name span {
+            margin-right: 3px;
+        }
+        .datapack-name:hover {
+            color: #40a9ff;
+        }
+    }
+
+    .anticon.anticon-info-circle {
+        color: var(--sub-antd);
+        cursor: pointer;
+    }
+
+    .actionbtn-disabled {
+        color: rgba(0, 0, 0, 0.25) !important;
+    }
+}
+
+.ant-popover-inner-content {
+    .user-information.module-info-left-generic,
+    .transport-information.module-info-left-generic {
+        .information-label.truncate {
+            display: block;
+            min-width: 80px;
+            b {
+                font-weight: normal;
+            }
+        }
+
+        .information-value.truncate {
+            display: block;
+            max-width: 200px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.create-schedule-form {
+    .select-datapack-title {
+        margin-top: var(--spacing);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+        height: 15px;
+        margin-bottom: var(--spacing-xs);
+        line-height: (--lh-lg);
+        .s8-button.ant-btn {
+            padding: 0;
+            line-height: 1;
+        }
+    }
+
+    // overwrite css thư viện cho field frequency
+    .ant-form-item-has-feedback > .ant-select .ant-select-arrow,
+    .ant-form-item-has-feedback > .ant-select .ant-select-clear,
+    .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow,
+    .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-clear {
+        right: 11px;
+    }
+
+    .select-title-location {
+        justify-content: flex-start;
+    }
+
+    .ant-row.ant-form-item.select-location {
+        margin-top: 0 !important;
+    }
+
+    .refresh-location-btn:hover {
+        box-shadow: none;
+    }
+
+    .spin-icon .anticon {
+        animation: spin 5s linear infinite;
+    }
+}

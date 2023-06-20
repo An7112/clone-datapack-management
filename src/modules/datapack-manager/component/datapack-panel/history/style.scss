@@ -1,0 +1,32 @@
+.history-panel {
+    height: 100%;
+    border: none;
+    .compose-panel-body {
+        padding: 0;
+        height: 100%;
+        .timeline-container {
+            border-top: 0;
+        }
+
+        .timeline-filter {
+            .ant-select {
+                min-width: 140px;
+            }
+        }
+    }
+
+    .btn-back {
+        .anticon {
+            color: var(--main-major);
+        }
+    }
+
+    .compose-header {
+        .header-title {
+            text-transform: none;
+            text-shadow: none;
+        }
+
+        // background-color: var(--main-tertiary);
+    }
+}

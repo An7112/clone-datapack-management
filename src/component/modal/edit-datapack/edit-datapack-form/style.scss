@@ -1,0 +1,19 @@
+.edit-datapack-form {
+    .ant-switch-checked {
+        background: var(--main-danger);
+        display: inline;
+
+        &::after {
+            content: 'Locked';
+            color: var(--main-danger);
+            position: absolute;
+            top: 0;
+            left: 55px;
+            font-size: var(--fs);
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
